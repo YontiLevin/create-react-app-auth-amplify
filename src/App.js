@@ -4,8 +4,24 @@ import './App.css';
 import { withAuthenticator } from 'aws-amplify-react'
 import Amplify, { Auth } from 'aws-amplify';
 import aws_exports from './aws-exports';
-Amplify.configure(aws_exports);
+import { get_secrets } from "./test_sm"
 
+
+Amplify.configure(aws_exports);
+Auth.configure(aws_exports);
+
+
+
+async function print_secrets(credentials) {
+  var res = await get_secrets(credentials);
+  console.log(res);
+
+}
+
+Auth.currentCredentials()
+  .then(credentials => {
+    print_secrets(credentials);
+  })
 class App extends Component {
   render() {
     return (

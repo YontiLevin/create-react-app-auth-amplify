@@ -3,18 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "aws-amplify": "^2.2.0",
-    "aws-amplify-react": "^3.1.1",
+    "@aws-amplify/ui-react": "^0.2.34",
+    "aws-amplify": "^3.3.14",
+    "aws-amplify-react": "^4.2.18",
+    "aws-sdk": "^2.825.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "kind-of": "^6.0.3",
     "lodash": "^4.17.19",
+    "node-forge": "^0.10.0",
+    "object-path": "^0.11.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "axios": "^0.21.1",
-    "serialize-javascript": "^3.1.0",
-    "node-forge": "^0.10.0",
-    "object-path": "^0.11.5"
+    "serialize-javascript": "^3.1.0"
   },
   "resolutions": {
     "set-value": "^2.0.1",
